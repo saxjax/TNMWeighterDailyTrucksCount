@@ -8,6 +8,7 @@ from flask import request
 import json
 from urllib.parse import urlencode
 from urllib.request import urlopen
+
 # from service import service
 # from src.adapter_transportation import from_json
 from src.__pytest__.conftest import client
