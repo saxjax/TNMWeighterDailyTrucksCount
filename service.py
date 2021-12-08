@@ -68,4 +68,5 @@ def internal_error(exception):
     print("500 Error caught")
     TracebackType.format_exc()    
 
-service.run(host="0.0.0.0", port=5000)
+if __name__=="__main__":
+    service.run(host="0.0.0.0", port=5000)
