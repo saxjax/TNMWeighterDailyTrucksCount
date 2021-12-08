@@ -1,0 +1,270 @@
+{
+    "meta_data": {
+        "max_length": 3778,
+        "min_length": 1,
+        "max_slope": 24.527,
+        "min_slope": -2.407,
+        "max_legal_speed": 80,
+        "min_recommended_speed": 0,
+        "max_mean_speed": 0,
+        "min_mean_speed": 0,
+        "max_daily_year": 16138.0,
+        "min_daily_year": 57.5,
+        "max_daily_july": 14813.0,
+        "min_daily_july": 51.5,
+        "max_daily_trucks": 10,
+        "min_daily_trucks": 1
+    },
+    "vehicle": {
+        "id": 1,
+        "name": "Fiat multipla",
+        "data": {
+            "top_speed": 150,
+            "mileage": 13204.03,
+            "max_fuel": 4.3
+        }
+    },
+    "nodes": {
+        "1": {
+            "id": 1,
+            "weight": 0.0,
+            "data": {
+                "longitude": 15.9550166585396,
+                "latitude": 57.1940874759639,
+                "country": "DK",
+                "municipality": "Aalborg",
+                "is_border": false,
+                "type": "regular",
+                "signal_control": true
+            },
+            "edges": {
+                "1": {
+                    "id": 1,
+                    "from_node_id": 1,
+                    "to_node_id": 3,
+                    "weight": 1.0,
+                    "data": {
+                        "length": 96,
+                        "slope": 0,
+                        "type": "Trafikvej, prim\u00e6r by",
+                        "type_max_speed": 80,
+                        "set_max_speed": 80,
+                        "recommended_speed": 0,
+                        "mean_speed": 0,
+                        "daily_year": 2189.0,
+                        "daily_july": 2252.5,
+                        "daily_trucks": 10,
+                        "daily_10_axle": 188.0,
+                        "fuel_station": false,
+                        "max_axle_load": 0,
+                        "max_height": 0,
+                        "max_length": 0,
+                        "max_weight": 0,
+                        "from_node_id": 1,
+                        "to_node_id": 3
+                    }
+                },
+                "2": {
+                    "id": 2,
+                    "from_node_id": 1,
+                    "to_node_id": 3,
+                    "weight": 1.0,
+                    "data": {
+                        "length": 208,
+                        "slope": 0,
+                        "type": "Trafikvej,\n    prim\u00e6r by",
+                        "type_max_speed": 80,
+                        "set_max_speed": 80,
+                        "recommended_speed": 0,
+                        "mean_speed": 0,
+                        "daily_year": 3876.0,
+                        "daily_july": 4703.0,
+                        "daily_trucks": 10,
+                        "daily_10_axle": 281.5,
+                        "fuel_station": false,
+                        "max_axle_load": 0,
+                        "max_height": 0,
+                        "max_length": 0,
+                        "max_weight": 0,
+                        "from_node_id": 1,
+                        "to_node_id": 3
+                    }
+                }
+            }
+        },
+        "2": {
+            "id": 2,
+            "weight": 0.0,
+            "data": {
+                "longitude": 16.2145174943897,
+                "latitude": 56.9771748846184,
+                "country": "DK",
+                "municipality": "Aalborg",
+                "is_border": false,
+                "type": "regular",
+                "signal_control": false
+            },
+            "edges": {}
+        },
+        "3": {
+            "id": 3,
+            "weight": 0.0,
+            "data": {
+                "longitude": 15.5891433415976,
+                "latitude": 56.9609130669128,
+                "country": "DK",
+                "municipality": "Aalborg",
+                "is_border": false,
+                "type": "regular",
+                "signal_control": false
+            },
+            "edges": {
+                "3": {
+                    "id": 3,
+                    "from_node_id": 3,
+                    "to_node_id": 1,
+                    "weight": 1.0,
+                    "data": {
+                        "length": 302,
+                        "slope": "-0.23899999999999988",
+                        "type": "Trafikvej,\n    prim\u00e6r by",
+                        "type_max_speed": 0,
+                        "set_max_speed": 0,
+                        "recommended_speed": 0,
+                        "mean_speed": 0,
+                        "daily_year": 200,
+                        "daily_july": 100,
+                        "daily_trucks": 10,
+                        "daily_10_axle": 20,
+                        "fuel_station": false,
+                        "max_axle_load": 0,
+                        "max_height": 0,
+                        "max_length": 0,
+                        "max_weight": 0,
+                        "from_node_id": 3,
+                        "to_node_id": 1
+                    }
+                },
+                "4": {
+                    "id": 4,
+                    "from_node_id": 3,
+                    "to_node_id": 1,
+                    "weight": 1.0,
+                    "data": {
+                        "length": 39,
+                        "slope": "null",
+                        "type": "Trafikvej,\n    prim\u00e6r by",
+                        "type_max_speed": 0,
+                        "set_max_speed": 0,
+                        "recommended_speed": 0,
+                        "mean_speed": 0,
+                        "daily_year": 200,
+                        "daily_july": 100,
+                        "daily_trucks": 10,
+                        "daily_10_axle": 20,
+                        "fuel_station": false,
+                        "max_axle_load": 0,
+                        "max_height": 0,
+                        "max_length": 0,
+                        "max_weight": 0,
+                        "from_node_id": 3,
+                        "to_node_id": 1
+                    }
+                }
+            }
+        },
+        "4": {
+            "id": 4,
+            "weight": 0.0,
+            "data": {
+                "longitude": 15.7367147390899,
+                "latitude": 57.0368169072154,
+                "country": "DK",
+                "municipality": "Aalborg",
+                "is_border": false,
+                "type": "regular",
+                "signal_control": false
+            },
+            "edges": {
+                "5": {
+                    "id": 5,
+                    "from_node_id": 4,
+                    "to_node_id": 3,
+                    "weight": 1.0,
+                    "data": {
+                        "length": 168,
+                        "slope": "null",
+                        "type": "Trafikvej,\n    prim\u00e6r by",
+                        "type_max_speed": 0,
+                        "set_max_speed": 0,
+                        "recommended_speed": 0,
+                        "mean_speed": 0,
+                        "daily_year": 200,
+                        "daily_july": 100,
+                        "daily_trucks": 10,
+                        "daily_10_axle": 20,
+                        "fuel_station": false,
+                        "max_axle_load": 0,
+                        "max_height": 0,
+                        "max_length": 0,
+                        "max_weight": 0,
+                        "from_node_id": 4,
+                        "to_node_id": 3
+                    }
+                },
+                "6": {
+                    "id": 6,
+                    "from_node_id": 5,
+                    "to_node_id": 1,
+                    "weight": 1.0,
+                    "data": {
+                        "length": 55,
+                        "slope": "null",
+                        "type": "Trafikvej,\n    prim\u00e6r by",
+                        "type_max_speed": 0,
+                        "set_max_speed": 0,
+                        "recommended_speed": 0,
+                        "mean_speed": 0,
+                        "daily_year": 200,
+                        "daily_july": 100,
+                        "daily_trucks": 10,
+                        "daily_10_axle": 20,
+                        "fuel_station": false,
+                        "max_axle_load": 0,
+                        "max_height": 0,
+                        "max_length": 0,
+                        "max_weight": 0,
+                        "from_node_id": 5,
+                        "to_node_id": 1
+                    }
+                },
+                "7": {
+                    "id": 7,
+                    "from_node_id": 6,
+                    "to_node_id": 7,
+                    "weight": 1.0,
+                    "data": {
+                        "length": 40,
+                        "slope": "null",
+                        "type": "Trafikvej,\n    prim\u00e6r by",
+                        "type_max_speed": 0,
+                        "set_max_speed": 0,
+                        "recommended_speed": 0,
+                        "mean_speed": 0,
+                        "daily_year": 200,
+                        "daily_july": 100,
+                        "daily_trucks": 10,
+                        "daily_10_axle": 20,
+                        "fuel_station": false,
+                        "max_axle_load": 0,
+                        "max_height": 0,
+                        "max_length": 0,
+                        "max_weight": 0,
+                        "from_node_id": 6,
+                        "to_node_id": 7
+                    }
+                }
+            }
+        }
+    }
+}

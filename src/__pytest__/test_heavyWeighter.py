@@ -1,23 +1,34 @@
+import json
 import joblib
+import pandas as pd
 import pytest
+from src.enhancer_microservice import Enhancer
 from src.heavy_weighter import predict_heavy_traffic, train_model_on_TNM
 from src.__pytest__.conftest import fake_json
 
-def test_that_predicter_predicts_dailyTrucks (fake_dataframe):
-    
-    
+def test_that_predicter_predicts_dailyTrucks (fake_json,fake_dataframe):
     #arrange
+    pre_dataframe = pd.DataFrame(fake_dataframe)
+    
+    before_predictions_on_daily_trucks = pre_dataframe['daily_trucks'].tolist()
+    
+    #prepare for predicter, by removing theese columns
+    pre_dataframe_dropped_columns = pre_dataframe.drop(columns=['max_axle_load', 'max_height','max_weight', 'max_length', 'recommended_speed', 'mean_speed','daily_trucks'])
+
+    #the trained model found in the filesystem
     model = joblib.load('decision_tree_model.joblib')
-    pre_predict = fake_dataframe['daily_10_axle'].tolist()
+    
 
     #act
-    predicted_dataframe = model.predict(fake_dataframe)
-
-    post_predict = predicted_dataframe['daily_10_axle'].tolist()
-    print(pre_predict)
-    print(post_predict)
+    predicted_dataframe = model.predict(pre_dataframe_dropped_columns)
+    after_predictions_on_daily_trucks = predicted_dataframe.tolist()
+    with pd.option_context('display.max_rows', None, 'display.max_columns', pre_dataframe.shape[1]):
+        print("dataframe used for predictions:\n",pre_dataframe)
+        print("the  daily_trucks before predictions:\n",before_predictions_on_daily_trucks)
+        print("the predicted daily_trucks after predictions:\n",predicted_dataframe)
     #assert
-    assert pre_predict != post_predict
+    assert after_predictions_on_daily_trucks != before_predictions_on_daily_trucks
+    assert False
 
 # @pytest.mark.parametrize('tnm',[
 # (fake_json),

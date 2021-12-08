@@ -19,9 +19,9 @@ def test_that_null_values_are_filled (fake_json,fake_json_as_dataframe, ):
     # act
     enhancedDataframe =  enhancer.enhance_data_frame(fake_json_as_dataframe)
     with pd.option_context('display.max_rows', None, 'display.max_columns', enhancedDataframe.shape[1]):
-        print(enhancedDataframe)
+        print("enhanced dataframe\n",enhancedDataframe)
     with pd.option_context('display.max_rows', None, 'display.max_columns', comparable_orig_dataframe_values.shape[1]):
-        print(comparable_orig_dataframe_values)
+        print("original dataframe\n",comparable_orig_dataframe_values)
     assert comparable_orig_dataframe_values.iloc[0]['type'] != enhancedDataframe.iloc[0]['type']
     assert comparable_orig_dataframe_values.iloc[1]['type_max_speed'] != enhancedDataframe.iloc[1]['type_max_speed']
     assert comparable_orig_dataframe_values.iloc[4]['set_max_speed'] != enhancedDataframe.iloc[4]['set_max_speed']
