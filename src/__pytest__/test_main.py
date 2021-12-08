@@ -1,7 +1,9 @@
 import json
 from src.main import main
 
-def test_integration_of_whole_service(enhanced_fake_json, annotated_fake_json):
+def test_integration_of_whole_service(mocker,enhanced_fake_json, annotated_fake_json):
+    # mock = mocker.patch("src.model_training.joblib", return_value=None)
+
     unannotated = json.loads(enhanced_fake_json, strict=False)
     annotated = json.loads(annotated_fake_json, strict=False)
 

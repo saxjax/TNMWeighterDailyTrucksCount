@@ -28,7 +28,6 @@ def test_that_predicter_predicts_dailyTrucks (fake_json,fake_dataframe):
         print("the predicted daily_trucks after predictions:\n",predicted_dataframe)
     #assert
     assert after_predictions_on_daily_trucks != before_predictions_on_daily_trucks
-    assert False
 
 # @pytest.mark.parametrize('tnm',[
 # (fake_json),

@@ -14,6 +14,6 @@ WORKDIR /src
 ADD . /src
 
 #run tests
-# RUN ["pytest", "-vv"]
+RUN ["pytest", "-vv"]
 
 ENTRYPOINT ["python", "service.py"]
